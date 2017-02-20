@@ -4,3 +4,5 @@ Start from here!
 
 [History](pages/history/index.md)
 
+[国学](pages/国学/index.md)
+

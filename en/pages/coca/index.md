@@ -1,3 +1,21 @@
+# TODO
+
+worrisome
+
+corny
+
+superior
+
+hypnotism
+
+pathetic
+
+midget
+
+jerk
+
+geezer
+
 # A
 
 # B
@@ -29,3 +47,6 @@
 [plumber](plumber.md)
 
 [populist](populist.md)
+
+[pound](pound.md)
+
