@@ -9,3 +9,5 @@ Start from here!
 [碎片](pages/碎片/index.md)
 
 [Research](pages/research/index.md)
+
+[书摘](pages/书摘/index.md)
