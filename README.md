@@ -1,4 +1,4 @@
-[Entrance](https://github.com/lzyerste/wiki)
+[Entrance](https://lzyerste.github.io/wiki/)
 
 
 
@@ -59,6 +59,7 @@ Suppose your first wiki is going to be in English, hence you must have a folder 
 1. Open `index.html` file with your favorite plain text editor (the one that is at the same level where `ll_CC` and your language folder is located, **NOT the one inside your language folder**)
 2. Find where it says "Override `ll_CC` below with your default language and country code"
 3. Change refresh meta tag from `url=ll_CC/` to `url=en/` **(trailing `/` is very important)**
+
 
 
 Structure
