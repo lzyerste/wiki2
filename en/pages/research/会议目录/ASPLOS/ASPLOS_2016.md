@@ -72,7 +72,7 @@ Proceedings of the Twenty-First International Conference on Architectural Suppor
   True IOMMU Protection from DMA Attacks: When Copy is Faster than Zero Copy. 249-262
 
 - [Amro Awad](http://dblp.uni-trier.de/pers/hd/a/Awad:Amro), [Pratyusa K. Manadhata](http://dblp.uni-trier.de/pers/hd/m/Manadhata:Pratyusa_K=), [Stuart Haber](http://dblp.uni-trier.de/pers/hd/h/Haber:Stuart), [Yan Solihin](http://dblp.uni-trier.de/pers/hd/s/Solihin:Yan), [William Horne](http://dblp.uni-trier.de/pers/hd/h/Horne:William):
-  **Silent Shredder: Zero-Cost Shredding for Secure Non-Volatile Main Memory Controllers. [263-276](/notes/2016_Awad et al._Silent Shredder Zero-Cost Shredding for Secure Non-Volatile Main Memory Controllers.md)**
+  **Silent Shredder: Zero-Cost Shredding for Secure Non-Volatile Main Memory Controllers. [263-276](/wiki/notes/2016_Awad et al._Silent Shredder Zero-Cost Shredding for Secure Non-Volatile Main Memory Controllers.md)**
 
 - [Youngjin Kwon](http://dblp.uni-trier.de/pers/hd/k/Kwon:Youngjin), [Alan M. Dunn](http://dblp.uni-trier.de/pers/hd/d/Dunn:Alan_M=), [Michael Z. Lee](http://dblp.uni-trier.de/pers/hd/l/Lee:Michael_Z=), [Owen S. Hofmann](http://dblp.uni-trier.de/pers/hd/h/Hofmann:Owen_S=), [Yuanzhong Xu](http://dblp.uni-trier.de/pers/hd/x/Xu:Yuanzhong), [Emmett Witchel](http://dblp.uni-trier.de/pers/hd/w/Witchel:Emmett):
   Sego: Pervasive Trusted Metadata for Efficiently Verified Untrusted System Services. 277-290
