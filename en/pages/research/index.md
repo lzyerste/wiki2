@@ -1,2 +1,2 @@
-[会议目录](会议目录/index.md)
+[会议目录](conference/index.md)
 
