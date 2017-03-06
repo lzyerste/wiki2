@@ -1,2 +1,2 @@
-python re_filter.py EuroSys_2016.md
+python re_filter.py test.md
 pause

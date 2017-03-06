@@ -449,3 +449,270 @@ It's divided into four business units.
 >
 
 > **Will you be reorganizing** the company?	 	你会重组公司吗？
+
+## 3 Describing how to build effective teams
+
+### Word
+
+excel
+
+擅长
+
+mission statement
+
+宗旨
+
+commitment
+
+承诺
+
+### Expression
+
+They were allowed to excel in that area.
+
+他们可以在那个领域胜出。
+
+#### 谈论团队协作
+
+使用含有 **team** 的复合词谈论团队协作。
+
+| A                                        | B                  |
+| ---------------------------------------- | ------------------ |
+| *Each **team member** excels in different areas.* | 每一位团队成员各擅其长。       |
+| _**Teamwork** creates better results._   | 团队协作创造更好的成果。       |
+| *We should organize weekend **team-building** activities.* | 我们应该在周末组织一些团队建设活动。 |
+| *I need employees who are good **team players**.* | 我需要具有团队精神的员工。      |
+
+使用 **incorporate** 和 **promote** 谈论建设高效团队的策略。
+
+> *Get ideas from your team, and **incorporate** the ideas into your project.*  在团队中集思广益，然后在你的项目中加以采纳。 
+>
+
+> *We need to **promote** the team's creativity.*  我们需要提高团队的创造能力。
+
+**mission statement** 传达了一家公司的主要目标，并且在其 **principles** 或 **values** 总结了公司信奉的原则或价值观。
+
+> *To achieve our goals, we need to write a **mission statement** that clearly outlines our principles.*     为了实现目标，我们需要制订公司宗旨，明确列出我们的原则。
+>
+
+> *One critical **principle** is that each employee has to make a commitment to the company.*     每位员工都必须为公司作出贡献，这是一项关键的原则。
+
+**goal** 可分成以一系列为实现目标而设立的 **tasks**。
+
+> *Before we hire a new manager, the first **task** is to write a job description.*    在聘请新经理前，我们的第一项工作是撰写职务说明。
+
+##### More Examples
+
+Our mission statement shows our commitment to quality.
+
+我们的宗旨表明了我们对质量的追求。
+
+Organize a weekend of team-building activities.
+
+安排周末团队建设活动。
+
+We promote the principles of teamwork.
+
+我们提倡团队协作的原则。
+
+Try to incorporate your employees' best ideas.
+
+尝试采纳手下员工提出的好点子。
+
+Create tasks that allow individuals to excel.
+
+创建让人各展所长的任务。
+
+#### **描述实现目标的方法**
+
+使用 **way**、**method**、**strategy**、**approach** 和 **technique** 等词描述实现目标的方法。注意，这些词的意思大致相同。
+
+| A                                        | B                                    |
+| ---------------------------------------- | ------------------------------------ |
+| *One **way** to build an effective team is to allow members to brainstorm project ideas.* | 一种建设高效团队的方法是让所有成员集思广益。               |
+| *The best **method** for building a strong team is to develop trust among its members.* | 建设一支坚强团队的最佳办法是培养团员之间的互信。             |
+| *Here's another good **technique**: Celebrate smaller achievements as you work toward the larger goal.* | 此外还有一种好办法：在努力实现更大目标的过程中，庆祝一路取得的较小成绩。 |
+
+使用含有 **you** 和 **it** 的表达，建议他人如何实现目标。
+
+| A                                        | B                     |
+| ---------------------------------------- | --------------------- |
+| _**The first thing you should do is** establish good communication._ | 你头一件要做的事是建立良好的沟通。     |
+| _**You never want to** give people tasks that don't match their skills._ | 你永远都不希望给人分配与其能力不符的工作。 |
+| _**It's a good idea to** have short, daily meetings._ | 举行简短的每日例会是个不错的主意。     |
+| _**It's important to** socialize with your team members._ | 与你的团队成员交往是很重要的。       |
+
+你也可以使用比喻来描述实现目标的方法。在第一例中，同事被比作棒球运动员。在第二例中，团队协作被比作园艺。习语 **Plant the seed** 的意思是 'do something that will develop in the future'。
+
+| A                                        | B                                        |
+| ---------------------------------------- | ---------------------------------------- |
+| _**Your colleagues are like players on a baseball team.** Each team member has a unique skill that helps the entire team get the job done._ | 你的同事好比棒球队的运动员。每一位团队成员都具有一项独特的技能，可以帮助整个团队完成工作。 |
+| _**You have to plant the seed of excitement** to motivate people to work together._ | 你必须播撒下兴奋的种子，鼓励人们共同努力。                    |
+
+##### More Exmaples
+
+On that note, it's important that each task is clear.
+
+就此来说，每项工作清楚明了很重要。
+
+They need to be invited to comment. I like that method.
+
+一定得要求他们发言。我喜欢那种方法。
+
+One of the ways to do that is incorporate their ideas.
+
+其中一种办法是采纳他们的点子。
+
+It's critical to promote each individual's skills.
+
+提升每个人的技能至关重要。
+
+Employees should be encouraged to do jobs they like.
+
+应该鼓舞员工做他们喜欢的工作。
+
+### Grammar
+
+#### 不定式
+
+用 **to** + 动词原形构成不定式结构，例如，**to make**。不定式结构可用于多种结构，表示功能或目的。例如，你可以用名词搭配不定式：               
+
+> *Employees need to make a **commitment to succeed**.*  员工需要致力于成功。
+>
+
+> *It's a **good idea to identify** each person's skills.*  确定每个人的技能，这是不错的想法。
+>
+
+你也可以使用形容词搭配不定式：
+
+> *It's **good to try to incorporate** everyone's ideas.*  试图采纳每个人的想法，这非常好。
+>
+
+> *We're **committed to excellence**.*  我们致力于卓越。
+
+用 **to + be +** 过去分词构成不定式结构，例如 **to be encouraged**。
+
+> *He **needs to be encouraged**, not criticized.*     他需要被鼓励，而不是被批评。
+>
+
+> *It's **helpful to be engaged** in the process.*     融入整个过程是有好处的。
+>
+
+不定式结构可以结合使用：
+
+> *Some people need **to be encouraged to work** in teams.*     有的人需要受到鼓励与团队合作。
+>
+
+> *It's important **to work together to accomplish** goals.*     重要的是，共同努力实现目标。
+>
+
+**To +** 动词起到与用于表达目的的结构 **in order to +** 动词一样的功能。**To +** 动词这种结构更常见，尤其是在英语口语中。
+
+> *Pull all the skills together **in order to build** an effective team.*     集合所有人的技能，从而建设一支高效的团队。
+>
+
+> _**To better understand** your goals, you should write a mission statement._     为了更好理解你们的目标，你们应该制订宗旨声明。
+>
+
+## 4 Writing about management strategies
+
+### Word
+
+### Expression
+
+comprehensive induction
+
+综合归纳
+
+an insane amount
+
+巨额
+
+terms and conditions
+
+条款
+
+abide by
+
+遵守
+
+on the same page
+
+在同一个页面（达成共识）
+
+#### Effective management
+
+**利用搭配识记生词**
+
+与单独识记相比，结合生词常用的词组 - 它的词语搭配 **collocations** 来记忆可能有帮助。以下是一些用于讨论高效管理的词组。注意所有词组都由形容词 **+** 名词构成。
+
+| A                                        | B                     |
+| ---------------------------------------- | --------------------- |
+| *Finding solutions to problems is the most **important aspect **of good management.* | 找到问题的解决办法是优秀管理最重要的内容。 |
+| *Identify the **key elements** important to achieving a goal.* | 确定对实现目标非常重要的关键因素。     |
+| *Develop **mutual trust** with your employees.* | 在你的员工之间培养互信。          |
+| *Consider the **internal **and **external threats** to a project.* | 考虑项目受到的内部和外部威胁。       |
+
+下一种词组是名词 **+** 名词。
+
+> *Please read the **terms and conditions** of the contract.* 请阅读合同的条款和条件。 
+
+这些词组均包含动词。前两个词组是动词 **+** 名词，第三个词组是动词 **+** 动词。
+
+| A                                        | B               |
+| ---------------------------------------- | --------------- |
+| *This will help **encourage expansion**.* | 这将有助于推动扩展。      |
+| _**Carry out an analysis **of strengths and weaknesses._ | 开展一项优缺点的分析。     |
+| *Employees must **be willing to commit **to the plan.* | 员工必须愿意为这项计划而努力。 |
+
+#### **提出管理策略的建议**
+
+使用含有 **be**、**need** 或 **say** 等词的表达，提出你坚信或确信的建议。
+
+| A                                        | B                      |
+| ---------------------------------------- | ---------------------- |
+| *Mutual trust **is** a key element.*     | 相互信任是关键因素。             |
+| *An easy solution **would be** to hire a new project manager.* | 一种简单的办法是聘请一位新的项目经理。    |
+| _**We need to be sure **managers are on the same page._ | 我们需要确认各位经理达成共识。        |
+| _**I say **we require that departments communicate more frequently._ | 我认为，我们应该要求部门之间的交流更加频繁。 |
+
+使用类似表达提出更犹疑的建议：
+
+| A                                        | B                        |
+| ---------------------------------------- | ------------------------ |
+| _**My thought is to **encourage expansion by creating a richer corporate culture._ | 我的想法是通过建设更加丰富的公司文化来推动扩展。 |
+| _**We could maybe even have** a forum._  | 也许我们甚至还可以举办一次讨论会。        |
+| _**What if we** carry out an analysis?_  | 要是我们开展一次分析会怎么样？          |
+| _**I'd like to **analyze the internal and external threats first._ | 我想先分析一下受到的内部和外部威胁。       |
+
+你可以使用含有 **propose** 和 **suggest** 的表达来提出建议。
+
+| A                                        | B                     |
+| ---------------------------------------- | --------------------- |
+| *I **propose** that, just one day a week, we don't have any meetings.* | 我提议，每周空出一天不开会。        |
+| _**What I'm proposing is **that we incorporate employee feedback._ | 我建议我们应该采纳员工的反馈。       |
+| *I say we use instant messaging more often – **just a suggestion**.* | 我认为我们多多使用即时讯息，只是提议一下。 |
+
+#### More Exmaples
+
+I say we look at the internal and external threats.
+
+我认为，我们应该考虑内部和外部威胁。
+
+How about no meetings on Thursdays? Just a suggestion.
+
+星期四不开会怎么样？只是提议一下。
+
+I'd like to carry out a complete analysis.
+
+我想开展一项彻底的分析。
+
+What I'm proposing is that we use instant messaging.
+
+我提议我们使用即时通讯。
+
+We need to make sure everyone's on the same page.
+
+我们必须确保所有人意见一致。
+
+### Grammar
