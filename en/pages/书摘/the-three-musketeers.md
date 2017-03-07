@@ -75,3 +75,14 @@ But be of good cheer -- all things come to certain people. (Bonacieux)
 If I am happy in an error, do not have the cruelty to correct it. (Buckingham)
 
 But the words you have just spoken, the hope you have almost given me, will have been worth everything -- even my life. (Buckingham)
+
+The higher her position, the more degrading her fall.
+
+The compensation will exceed your expectations.
+
+Private interests are nothing compared to common interests. I am for those who save the state.
+
+Be aware of the enemy who makes you presents.
+
+It is woman who has ruined us all, and will ruin us all, as long as the world exists.
+
