@@ -14,4 +14,4 @@ Start from here!
 
 [书摘](pages/书摘/index.md)
 
-[Coursera索引](pages/coursera/index.md)
+[Python Lib](pages/python_lib/index.md)
