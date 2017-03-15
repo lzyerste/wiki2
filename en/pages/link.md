@@ -1,5 +1,7 @@
 # 常用链接
 
+[Markdown Mode](http://localhost/wiki/en/index.md)
+
 ## 学术
 
 | [Google Scholar](https://scholar.google.com/) | [GitHub](https://github.com/)          | [DBLP](http://dblp.uni-trier.de/)     | [Sci-Hub](http://sci-hub.bz/)     | [LXR](http://lxr.free-electrons.com/)    |

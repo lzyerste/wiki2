@@ -281,5 +281,348 @@ He's a throwback, a complete anachronism.
 
 > *Leaders **wanting to be effective** should be empathetic.*  希望成为行之有效的领导者应该设身处地为人着想。
 
+## 3 Talking about a leader you admire
 
+### Word
+
+swallowed up
+
+吞并
+
+set a precedent
+
+开创先例
+
+underlings
+
+下属，党羽
+
+executive ladder
+
+行政阶梯（管理层）
+
+box plants
+
+纸盒厂
+
+considerably below his rank
+
+远低于他的等级
+
+carried right down
+
+自上而下地执行
+
+### Expression
+
+#### 谈论企业领导人
+
+以下是视频中的一些词和短语，在谈论企业领导人时可能有用。
+
+如果企业领导人不再为一家公司效力，你可以使用形容词 **former**：
+
+> *Gene Cartledge is the **former** CEO of Union Camp Corporation.*  Gene Cartledge 是 Union Camp Corporation 公司的前任首席执行官。
+
+如果一位企业领导人干了一件开创性的大事，或者树立了未来的新标准，那你就可以使用表达 **set a precedent**：
+
+> *He **set a precedent** of talking to every employee in the company.*  他开创了与公司所有员工交谈的先例。
+
+短语 **executive ladder** 是指公司的上层领导：
+
+> *He talked to people much further down the **executive ladder** than him.*  他和级别低他很多的人交谈。
+
+视频中的说话人使用了一些现代公司中不常见的术语。新的语言透露出管理人员与员工之间的协作和平等。例如，相对表示等级的 **rank** 一词，**position**更为礼貌。
+
+> *He made time to talk to everyone, no matter what their **position** was.*  他抽时间和每一位员工谈话，不管他们的职位是什么。
+
+**Underling** 是指级别更低的工人，意义偏于贬义。你有时也会听到有人使用 **subordinate** 一词，但是很少出现。注意这些句子是如何清楚表明谁是老板，而且不会过多强调职位和级别的。
+
+> *The director is always respectful of the people **who work for him**.*  这位主管总是尊敬为他办事的人。
+
+> _She is well-liked and admired by her **staff.**_  她深受手下员工的爱戴。
+
+**Associate** 是用于同事之间表示尊敬的称呼。
+
+> *This is my **associate**, Brad. He'll help you with the details of the contract.*  这是我的同事 Brad。他将帮你确定合同的细节。
+
+**buy out** 或 **take over** 的另一种表达是 **swallow up**。该表达强调执行收购的公司规模比被收购的公司大很多。
+
+> *The company was **swallowed up** by a huge corporation.*  这家公司被一家大公司吞并了。
+
+#### 谈论公司的等级制度
+
+**Horizontal** 或 **flat** 公司没有严格分明的等级制度。管理层与非管理层员工，甚至定期与客户合作共事。**Vertical** 或 **tall** 类型的公司通常等级分明，**CEO**处于最上层，发号施令，传达至最底层。这种架构通常称为 **top-down**。
+
+
+
+| A                                        | B                        |
+| ---------------------------------------- | ------------------------ |
+| *The CEO's order **carried down** through all levels of the company.* | 首席执行官的命令自上而下传达至公司的每一个阶层。 |
+| *Our company is organized **vertically**, and it's quite difficult to climb the executive ladder.* | 我们的公司采用垂直型架构，要升到管理层相当困难。 |
+| _**Horizontal **management has people of all positions working together._ | 水平化管理让所有职位不同的人合作共事。      |
+
+公司内部的最高管理职位有时被称为 **C-level**，这些职位的首字母都是 **C**，其中包括 **CEO**、**COO**、**CFO** 和 **CTO**。
+
+> _**The CEO** will address the board of directors next week._  首席执行官下周将在董事会上发言。
+
+在谈论他人的工作级别时，我们可以谈及他们职责方面的信息。
+
+| A                                        | B                    |
+| ---------------------------------------- | -------------------- |
+| *As HR manager, she is **in charge of **all hiring.* | 身为人力资源经理，她负责所有的招聘事宜。 |
+| *The CTO is **responsible for** 15 engineers.* | 那位首席技术官负责 15 位工程师。   |
+| *He's **head of **the accounting department.* | 他是财会部门的主管。           |
+| *All department directors **report to **the CEO.* | 所有部门主管向首席执行官汇报工作。    |
+
+#### More Examples
+
+Vertical companies have a top-down organization.
+
+垂直型公司具有自上而下的组织结构。
+
+All department heads report directly to the CEO.
+
+所有部门领导直接向首席执行官汇报工作。
+
+She's in charge of product innovation and development.
+
+她负责产品创新和开发。
+
+Please inform all of your staff of the changes.
+
+请把这些变化传达给你手下的所有员工。
+
+Position is less important in a horizontal organization.
+
+在水平型中，职位的重要性更低。
+
+#### 表达敬佩
+
+如果你 **admire** 某人，表示你尊敬尊重他。表达敬佩的方法有很多。注意，**respect** 的动词和名词形式相同。
+
+| A                                        | B                |
+| ---------------------------------------- | ---------------- |
+| *I have nothing but **respect **for the entire team.* | 我完全是佩服整个团队。      |
+| *All of the directors **respect** the decision of the CEO.* | 所有主管都尊敬首席执行官的决定。 |
+| *We are full of **admiration** for all he has accomplished.* | 我们对他取得的成就满怀敬佩。   |
+| *I **admire** her commitment to the company.* | 我赞赏她对那家公司作出的奉献。  |
+
+这些是表示敬佩更正式的表达：
+
+> *He **is held in high esteem** by all his colleagues.*  他深受同事敬重。
+
+> _I **have the greatest regard for **everything she has achieved._  对她取得的一切成就，我都深感敬佩。 
+
+以下表达传达的敬意更深更夸张：
+
+> *He **is in awe of** his manager's abilities.*  他无比敬佩他的经理的才能。
+
+> *Employees at every level **revere** the company's founder.*  公司创始人受到上上下下所有员工的崇敬。 
+
+#### More Examples
+
+What is it about her that you admire?
+
+你敬佩她哪一点？
+
+What do you think of a horizontal organization?
+
+你对水平型架构怎么看？
+
+I respect anyone with great people skills.
+
+凡是擅长人际交往的人，我都佩服。
+
+I have nothing but respect for you.
+
+我完全是佩服你。
+
+Having self-respect is very important as well.
+
+拥有自尊心同样非常重要。
+
+He's full of admiration for her.
+
+他非常敬佩她。
+
+### Grammar
+
+## 4 Developing leadership qualities
+
+### Word
+
+human nature
+
+人性
+
+sharing a vision
+
+分享愿景
+
+sharing hardship
+
+共渡患难
+
+earning trust
+
+争取信任
+
+monetary policy
+
+货币政策
+
+In terms of leadership itself ...
+
+就领导力自身来讲……
+
+The essence of leadership ...
+
+领导力的核心……
+
+What makes a successful leader ...
+
+成功的领导者是……
+
+My one lesson I'll give you today.
+
+我今天要给你上一堂课。
+
+One of the things you should learn ...
+
+有件事你要学……
+
+### Expression
+
+#### 词组：领导才能
+
+词组是指两个或两个以上经常搭配在一起的词。
+
+| A                                        | B                        |
+| ---------------------------------------- | ------------------------ |
+| *Stability is hard to achieve because **circumstances change**.* | 环境变了，所以很难实现稳定。           |
+| *Successful leadership includes **persuading others** and **earning trust**.* | 成功的领导才能包括说服他人和赢得信任。      |
+| *Good leadership includes both **sharing a vision **and **sharing hardship**.* | 优秀的领导能力不仅包括分享梦想，也包括共担患难。 |
+| _**Human nature** doesn't change with circumstances._ | 人性不会随着环境改变。（江山易改，本性难移。）  |
+| _**Mental agility** will help prepare you for the unexpected._ | 敏捷的思维将有助于你做好应对突发状况的准备。   |
+
+以下短语可用于谈论货币问题：
+
+> *Forbes believes that a **global currency** is important for stability.*  Forbes 认为，全球通用货币对维持稳定非常重要。
+
+> _**Monetary policy** has to do with controlling the supply of money._  货币政策与控制货币供应有关。 
+
+#### More Examples
+
+A successful leader earns trust and persuades others.
+
+成功的领导人取得信任，说服他人。
+
+A global currency would lead to stability.
+
+全球性通用货币将带来稳定。
+
+Circumstances change, but human nature does not.
+
+环境会变，但人性不会变。
+
+A good leader shares both vision and hardship.
+
+优秀的领导分享梦想，共担患难。
+
+Mental agility is a big leadership characteristic.
+
+敏捷的思维是重要的领导特质。
+
+Some people think monetary policy is boring.
+
+有人认为货币政策很枯燥。
+
+#### 集中一点
+
+如果要强调某事，或是让听众或读者产生期待，集中一点是不错的策略。一种办法是使用类似表达，将听众的注意力集中到话题上：
+
+| A                                        | B                          |
+| ---------------------------------------- | -------------------------- |
+| _**In terms of change**, good leaders know that circumstances change, but human nature does not._ | 就改变而言，优秀的领导人懂得环境会变，但人性不会变。 |
+| _**Concerning** corporate hierarchy, there are two basic models._ | 就公司等级制度而言，有两种基本的形式。        |
+| _**With regard to **leadership characteristics, decisiveness is among the most important._ | 就领导特质而言，果断是其中最重要的一点。       |
+| _**Regarding** failure, it is not something to be feared._ | 就失败而言，它并不可怕。               |
+
+用疑问词起句也是一种不错的方法。
+
+| A                                        | B                    |
+| ---------------------------------------- | -------------------- |
+| _**What **makes a successful leader is not the same in all circumstances._ | 环境不同，成功领导人的必备素质也不相同。 |
+| _**How** you speak to someone is just as important as what you say._ | 怎么讲和讲什么一样重要。         |
+
+此外，使用含有 **one** 或 **one of** 的表达也同样有效。
+
+> _**My one lesson I'll give you today** is the need for a global currency._  我今天要给大家讲授的课程是对于全球通用货币的需求。
+
+> _**One of the things you should learn** is the importance of honesty._  诚实的重要性是你应该学习的内容之一。 
+
+#### More Examples
+
+In terms of leadership, honesty is crucial.
+
+就领导才能而言，诚信至关重要。
+
+Regarding failure, it is not something to be feared.
+
+就失败而言，它并不可怕。
+
+How you speak is just as important as what you say.
+
+怎么讲和讲什么一样重要。
+
+One of the most important things is empathy.
+
+同感是最重要的能力之一。
+
+### Grammar
+
+#### 复习：反身代词
+
+行为发起与行为接受的人或物相同时，使用反身代词。在代词后添加后缀 **-self** 或 **-selves** 即可构成反身代词。
+
+> *He persuaded **himself** to trust them.*  他说服自己信任他们。
+
+> *The leaders convinced **themselves** of the need for stronger monetary policy.*  各国领导人说服自己有必要推行更加强硬的货币政策。 
+
+你可以使用反身代词加强语气。注意，在这些例子中，反身代词直接位于代词之前或之后。
+
+> _**She herself **brought stability to the company._  她独力让公司稳定下来。
+
+> _**Myself** – **I **don't believe in sharing hardship._  我自己 - 我不相信患难与共。
+
+注：如果去掉反身代词，句子意义并不改变，但失去了强调的语气。
+
+要强调某事由人单独或没借助他人力量完成，使用反身代词搭配介词 **by**。
+
+| A                                        | B             |
+| ---------------------------------------- | ------------- |
+| *Were you able to do it **by yourself**?* | 你自己一个人能行吗？    |
+| *She was able to persuade the others **by herself**.* | 她独自一个人说服了其他人。 |
+
+#### More Examples
+
+I wouldn't do it that way myself.
+
+我自己不会那样干。
+
+The company set the precedent itself.
+
+这家公司自身开创了先例。
+
+You yourself know that it won't work.
+
+你自己清楚这样做是没用的。
+
+She herself led the team successfully.
+
+她自己成功领导了这支团队。
+
+They created the new software by themselves.
+
+他们独力设计了这款新软件。
 
