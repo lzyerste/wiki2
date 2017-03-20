@@ -1,4 +1,4 @@
-# UpInt (3) 单元 **3** Leadership
+# UpInt (3) 单元 3 Leadership
 
 ## 1 Discussing change management
 

@@ -15,3 +15,5 @@ Start from here!
 [书摘](pages/书摘/index.md)
 
 [Python Lib](pages/python_lib/index.md)
+
+[Python 源码](pages/tech/cpython/index.md)
