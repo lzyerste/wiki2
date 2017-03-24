@@ -19,24 +19,40 @@
 | [complex()](https://docs.python.org/3/library/functions.html#complex) | [hasattr()](https://docs.python.org/3/library/functions.html#hasattr) | [max()](https://docs.python.org/3/library/functions.html#max) | [round()](https://docs.python.org/3/library/functions.html#round) |                                          |
 | [delattr()](https://docs.python.org/3/library/functions.html#delattr) | [hash()](https://docs.python.org/3/library/functions.html#hash) | [memoryview()](https://docs.python.org/3/library/functions.html#func-memoryview) | [set()](https://docs.python.org/3/library/functions.html#func-set) |                                          |
 
-## range()
+## range(start, stop[, step])
 
-- range(*stop*)
-- range(*start*, *stop*[, *step*])
+```python
+range(stop)
+range(start, stop[, step])
+```
 
-Rather than being a function, [`range`](https://docs.python.org/3/library/stdtypes.html#range) is actually an immutable sequence type, as documented in [Ranges](https://docs.python.org/3/library/stdtypes.html#typesseq-range) and [Sequence Types — list, tuple, range](https://docs.python.org/3/library/stdtypes.html#typesseq).
-
-[start, stop)，start默认为0。
-
+例子：
 ```python
 list(range(5))  # [0, 1, 2, 3, 4]
 list(range(4, -1, -1))  # [4, 3, 2, 1, 0]
 list(range(0, 10, 2))  # [0, 2, 4, 6, 8]
 ```
 
-## print()
+Rather than being a function, [`range`](https://docs.python.org/3/library/stdtypes.html#range) is actually an immutable sequence type, as documented in [Ranges](https://docs.python.org/3/library/stdtypes.html#typesseq-range) and [Sequence Types — list, tuple, range](https://docs.python.org/3/library/stdtypes.html#typesseq).
 
-print(*objects*, *sep=' '*, *end='\n'*, *file=sys.stdout*, *flush=False*)
+[start, stop)，start默认为0。
+
+## print(s)
+
+```python
+print(objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+```
+
+例子：
+
+```python
+print("Hello, world.")  # Hello, world.
+print("Number %d" % (1))  # Number 1
+print(s, end='')  # 末尾不要回车
+print(s, file=f)  # 输出到文件f
+print(1, 2, 3)  # 1 2 3   空格分开
+print(1, 2, 3, sep=',')  # 1,2,3   以sep分开
+```
 
 Print *objects* to the text stream *file*, separated by *sep* and followed by *end*. *sep*, *end* and *file*, if present, must be given as keyword arguments.
 
@@ -48,19 +64,9 @@ Whether output is buffered is usually determined by *file*, but if the *flush* k
 
 Changed in version 3.3: Added the *flush* keyword argument.
 
-```python
-print("Hello, world.")  # Hello, world.
-print(s, end='')  # 末尾不要回车
-print(s, file=f)  # 输出到文件f
-print(1, 2, 3)  # 1 2 3
-print(1, 2, 3, sep=',')  # 1,2,3
-```
-
 ## len(s)
 
-Return the **length** (the number of items) of an object. The argument may be a **sequence** (such as a string, bytes, tuple, list, or range) or a **collection** (such as a dictionary, set, or frozen set).
-
-返回长度或个数。
+例子：
 
 ```python
 len("abcd")  # 4, string
@@ -69,17 +75,144 @@ len((1, 2))  # 2, tuple
 len(set([1, 2, 3, 1]))  # 3, set
 ```
 
-## open()
+Return the **length** (the number of items) of an object. The argument may be a **sequence** (such as a string, bytes, tuple, list, or range) or a **collection** (such as a dictionary, set, or frozen set).
+
+返回长度或个数。
+
+## open(file, mode, encoding)
+
+```python
+open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+```
+
+例子（文本模式）：
+
+```python
+fin = open("in.txt", encoding='utf8')  # read text mode
+fout = open("out.txt", 'w', encoding='utf8')  # write text mode
+# fout.write(fin.read())
+for line in fin:
+    print(line, file=fout, end='')  # easy to control format
+fin.close()
+fout.close()
+```
+
+文件的常见操作有：
+
+* **read()**：默认读取文件全部，也可以传入size参数指定读取字符个数。针对小文件，可以先一次性全部读取（返回字符串），然后再对返回的字符串进行操作，比如正则表达式处理或简单分行split()。
+* **readlines()**：默认读取所有行（每行的换行符原汁原味存在），返回一个字符串链表。跟f.read().split()类似。也可以指定要读取的行数。
+* **write()**：与read()对应的写操作，返回结果为写成功的字符个数。
+* **writelines()**：与readlines()对应。
+
+系统的标准输入输出为sys.stdin与sys.stdout，可以类似操作。
+
+Open *file* and return a corresponding [file object](https://docs.python.org/3/glossary.html#term-file-object). If the file cannot be opened, an [`OSError`](https://docs.python.org/3/library/exceptions.html#OSError) is raised.
+
+***file*** is a [path-like object](https://docs.python.org/3/glossary.html#term-path-like-object) giving the pathname (absolute or relative to the current working directory) of the file to be opened or an integer file descriptor of the file to be wrapped. (If a file descriptor is given, it is closed when the returned I/O object is closed, unless *closefd* is set to `False`.)
+
+file一般使用文件路径字符串。
+
+***mode*** is an optional string that specifies the mode in which the file is opened. It **defaults** to `'r'` which means open for **reading** in **text mode**. Other common values are `'w'`for **writing** (truncating the file if it already exists), `'x'` for exclusive creation and `'a'` for **appending** (which on *some* Unix systems, means that *all* writes append to the end of the file regardless of the current seek position). In text mode, if ***encoding*** is not specified, the encoding used is platform dependent:`locale.getpreferredencoding(False)` is called to get the current locale encoding. (For reading and writing raw bytes use binary mode and leave *encoding* unspecified.) The available modes are:
+
+| Character | Meaning                                  |
+| --------- | ---------------------------------------- |
+| `'r'`     | open for reading (default)               |
+| `'w'`     | open for writing, **truncating the file first** |
+| `'x'`     | open for exclusive creation, failing if the file already exists |
+| `'a'`     | open for writing, appending to the end of the file if it exists |
+| `'b'`     | **binary mode**                          |
+| `'t'`     | text mode (default)                      |
+| `'+'`     | open a disk file for updating (reading and writing) |
+| `'U'`     | [universal newlines](https://docs.python.org/3/glossary.html#term-universal-newlines) mode (deprecated) |
+
+The default mode is `'r'` (open for reading text, synonym of `'rt'`). For binary read-write access, the mode `'w+b'` opens and truncates the file to 0 bytes. `'r+b'` opens the file without truncation.
+
+As mentioned in the [Overview](https://docs.python.org/3/library/io.html#io-overview), Python distinguishes between binary and text I/O. Files opened in **binary mode** (including `'b'` in the *mode* argument) return contents as [`bytes`](https://docs.python.org/3/library/functions.html#bytes) objects without any decoding. In **text mode** (the default, or when `'t'` is included in the *mode* argument), the contents of the file are returned as [`str`](https://docs.python.org/3/library/stdtypes.html#str), the bytes having been first decoded using a platform-dependent encoding or using the specified ***encoding*** if given.
+
+***encoding*** is the name of the encoding used to decode or encode the file. This should only be used in text mode. The default encoding is platform dependent (whatever [`locale.getpreferredencoding()`](https://docs.python.org/3/library/locale.html#locale.getpreferredencoding) returns), but any [text encoding](https://docs.python.org/3/glossary.html#term-text-encoding) supported by Python can be used. See the [`codecs`](https://docs.python.org/3/library/codecs.html#module-codecs) module for the list of supported encodings.
 
 ------
 
-## list()
+## list([iterable])
 
-## dict()
+```python
+class list([iterable])
+```
 
-## set()
+例子：
 
-## tuple()
+```python
+list()  # []
+[]  # []
+[1, 'a']  # [1, 'a']
+list(range(5))  # [0, 1, 2, 3, 4]
+list((1, 2))  # [1, 2], tuple, list(1, 2) is wrong
+list({3, 5, 5})  # [3, 5], set
+[i ** 2 for i in range(5)]  # [0, 1, 4, 9, 16]
+[i for i in range(5) if i & 1]  # [1, 3], odd numbers
+```
+
+Rather than being a function, [`list`](https://docs.python.org/3/library/stdtypes.html#list) is actually a mutable sequence type, as documented in [Lists](https://docs.python.org/3/library/stdtypes.html#typesseq-list) and [Sequence Types — list, tuple, range](https://docs.python.org/3/library/stdtypes.html#typesseq).
+
+## dict(**kwarg)
+
+```python
+class dict(**kwarg)
+class dict(mapping, **kwarg)
+class dict(iterable, **kwarg)
+```
+
+例子：
+
+```python
+dict()  # {}
+{}  # {}
+{1: 'a', 2: 'b'}  # {1: 'a', 2: 'b'}
+```
+
+Create a new dictionary. The [`dict`](https://docs.python.org/3/library/stdtypes.html#dict) object is the dictionary class. See [`dict`](https://docs.python.org/3/library/stdtypes.html#dict) and [Mapping Types — dict](https://docs.python.org/3/library/stdtypes.html#typesmapping) for documentation about this class.
+
+For other containers see the built-in [`list`](https://docs.python.org/3/library/stdtypes.html#list), [`set`](https://docs.python.org/3/library/stdtypes.html#set), and [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple) classes, as well as the [`collections`](https://docs.python.org/3/library/collections.html#module-collections) module.
+
+## set([iterable])
+
+```python
+class set([iterable])
+```
+
+例子：
+
+```python
+set()  # set()
+{1, 2, 2}  # {1, 2}
+# {} is an empty dict.
+set([1, 2, 3, 3])  # {1, 2, 3}
+```
+
+Return a new [`set`](https://docs.python.org/3/library/stdtypes.html#set) object, optionally with elements taken from *iterable*. `set` is a built-in class. See [`set`](https://docs.python.org/3/library/stdtypes.html#set) and [Set Types — set, frozenset](https://docs.python.org/3/library/stdtypes.html#types-set) for documentation about this class.
+
+For other containers see the built-in [`frozenset`](https://docs.python.org/3/library/stdtypes.html#frozenset), [`list`](https://docs.python.org/3/library/stdtypes.html#list), [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple), and [`dict`](https://docs.python.org/3/library/stdtypes.html#dict) classes, as well as the [`collections`](https://docs.python.org/3/library/collections.html#module-collections) module.
+
+## tuple([iterable])
+
+```python
+tuple([iterable])
+```
+
+tuple元组不可改。
+
+例子：
+
+```python
+tuple()  # an empty tuple
+()  # an empty tuple
+tuple([1, 2])  # (1, 2)
+(1, 2)  # (1, 2)
+1, 2  # (1, 2)
+a, b = b, a  # swap two elements
+```
+
+Rather than being a function, [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple) is actually an **immutable** sequence type, as documented in [Tuples](https://docs.python.org/3/library/stdtypes.html#typesseq-tuple) and [Sequence Types — list, tuple, range](https://docs.python.org/3/library/stdtypes.html#typesseq).
 
 ------
 
@@ -95,9 +228,11 @@ len(set([1, 2, 3, 1]))  # 3, set
 
 ## abs(x)
 
-Return the **absolute value** of a number. The argument may be an integer or a floating point number. If the argument is a complex number, its magnitude is returned.
+```python
+abs(x)
+```
 
-取绝对值，针对整型、浮点及复数都可用。如果是复数，则返回它的模。
+例子：
 
 ```python
 abs(3)  # 3, integer
@@ -107,11 +242,17 @@ abs(-1.2)  # 1.2
 abs(3 + 4j)  # 5.0, complex number
 ```
 
+Return the **absolute value** of a number. The argument may be an integer or a floating point number. If the argument is a complex number, its magnitude is returned.
+
+取绝对值，针对整型、浮点及复数都可用。如果是复数，则返回它的模。
+
 ## divmod(a, b)
 
-Take two (non complex) numbers as arguments and return a pair of numbers consisting of their **quotient** and **remainder** when using **integer division**. With mixed operand types, the rules for binary arithmetic operators apply. For integers, the result is the same as `(a // b, a % b)`. For floating point numbers the result is `(q, a % b)`, where *q* is usually `math.floor(a / b)` but may be 1 less than that. In any case `q * b + a % b` is very close to *a*, if `a % b` is non-zero it has the same sign as *b*, and `0 <= abs(a % b) < abs(b)`.
+```python
+divmod(a, b)
+```
 
-返回整数除法的商及余数，余数的符号与除数b相同。
+例子：
 
 ```python
 a = 9
@@ -119,7 +260,12 @@ b = 4
 divmod(a, b)  # (2, 1)
 b = -4
 divmod(a, b)  # (-3, -3), q * b + a % b = a, -3 * (-4) + (-3) = 9
+divmod(1234, 10)  # (123, 4)
 ```
+
+Take two (non complex) numbers as arguments and return a pair of numbers consisting of their **quotient** and **remainder** when using **integer division**. With mixed operand types, the rules for binary arithmetic operators apply. For integers, the result is the same as `(a // b, a % b)`. For floating point numbers the result is `(q, a % b)`, where *q* is usually `math.floor(a / b)` but may be 1 less than that. In any case `q * b + a % b` is very close to *a*, if `a % b` is non-zero it has the same sign as *b*, and `0 <= abs(a % b) < abs(b)`.
+
+返回整数除法的商及余数，余数的符号与除数b相同。
 
 ------
 

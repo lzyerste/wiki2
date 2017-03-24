@@ -1,10 +1,14 @@
-# 链表list
+---
+typora-root-url: ..\..\..\..\..
+---
+
+# list
 
 ## PyListObject
 
-文件：Include/listobject.h，Objects/listobject.c
+**File**: Include/listobject.h，Objects/listobject.c
 
-对应的类型type为PyList_Type，名字为“list”。
+The type of PyListObject is `PyList_Type`, whose name is 'list'. As we know, each object in python has its own type. PyList_Type is an static instance of PyTypeObject, each list has a type reference to PyList_Type (embedded in PyObject).
 
 ```c
 PyTypeObject PyList_Type = {
@@ -15,7 +19,7 @@ PyTypeObject PyList_Type = {
 }
 ```
 
-先看listobject.h的开头注释：
+The comment from the beginning of `listobject.h`:
 
 ```c
 /*
@@ -95,7 +99,15 @@ PyAPI_FUNC(void) _PyList_DebugMallocStats(FILE *out);
 
 ### PyList_New
 
+```c
+PyObject *PyList_New(Py_ssize_t size)
+```
+
 ### PyList_Size, O(1)
+
+```c
+Py_ssize_t PyList_Size(PyObject *op)
+```
 
 这个实现很简单，检查下是否为list类型，是的话直接调用Py_SIZE返回。
 
@@ -115,6 +127,12 @@ PyList_Size(PyObject *op)
 ```
 
 ### PyList_GetItem, O(1)
+
+```c
+PyObject *PyList_GetItem(PyObject *op, Py_ssize_t i)
+```
+
+The implementation is shown below.
 
 ```c
 PyObject *
@@ -145,6 +163,16 @@ PyList_GetItem(PyObject *op, Py_ssize_t i)
 ### PyList_SetItem, O(1)
 
 ```c
+int PyList_SetItem(PyObject *op, Py_ssize_t i, PyObject *newitem)
+```
+
+The implementation is shown below. As usual, the first step is to check if `op` is of type `PyListObject`. The next thing is to check the validity of parameter `i`, which is obviously between 0(inclusive) and size(exclusive). After checking, it is safe to do the actual work. Get the *ith* element of the list (notice the type of `p`) and call `Py_XSETREF`. The role of `Py_XSETREF` is to make `p` point to `newitem`. Now the operations to the list are done, but remember to manipulate the original object that is replace by the newitem. Its reference count should decrease as it is not used by the list any more. If the reference count reaches zero, it then could be recycled. The newitem's reference count is not touched.
+
+`list[i] = newitem`
+
+It is easy to see that the time complexity is O(1).
+
+```c
 int
 PyList_SetItem(PyObject *op, Py_ssize_t i,
                PyObject *newitem)
@@ -157,10 +185,6 @@ PyList_SetItem(PyObject *op, Py_ssize_t i,
     return 0;
 }
 ```
-
-p = list[i]，PyXSETREF的作用是使p指向newitem，同时让原来p指向的对象引用计数减1（Py_XDECREF）。如果引用计数到0了，那么可以回收。
-
-时间复杂度为O(1)。
 
 ### PyList_Insert, O(N)
 
@@ -244,3 +268,15 @@ PyList_Append
 ### PyList_ClearFreeList
 
 ### list_resize
+
+```c
+static int list_resize(PyListObject *self, Py_ssize_t newsize)
+```
+
+list_resize流程的一个简单示意图，它操作的是ob_item指向的`PyObject *`向量，resize之后，需要另外申请这块引用空间，使ob_item指向它。此后原来的指针向量可以被释放掉。在整个过程中，PyObject实体是不需要动的，因为只是操作它们的引用，so there is no need to touch the object's reference count。
+
+![list_resize](/wiki/img/list_resize.svg)
+
+链表list空间的理想使用情况是至少要半满（stay，无需调整），如果空间不够（grow）或者空间使用率未过半（shrink），都要进行resize操作。上面图示看到了，resize只是设计到原来引用的拷贝。
+
+resize之后的空间一般为`newsize * (9 / 8) + 6`，代码中9/8可表示为(1+1/8)，用移位及加法操作可得到，无需真正的除法。

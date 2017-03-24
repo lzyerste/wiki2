@@ -1,3 +1,7 @@
+[TED文本](ted/index.md)
+
+[英语美文](beautiful-essay/index.md)
+
 [EF](ef/index.md)
 
 [NPR News](npr/index.md)

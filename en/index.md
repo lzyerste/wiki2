@@ -1,3 +1,8 @@
+---
+typora-root-url: ..\..
+typora-copy-images-to: ..\img
+---
+
 Start from here!
 
 [COCA](pages/coca/index.md)
@@ -17,3 +22,4 @@ Start from here!
 [Python Lib](pages/python_lib/index.md)
 
 [Python 源码](pages/tech/cpython/index.md)
+
