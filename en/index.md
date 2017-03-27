@@ -1,8 +1,3 @@
----
-typora-root-url: ..\..
-typora-copy-images-to: ..\img
----
-
 Start from here!
 
 [COCA](pages/coca/index.md)

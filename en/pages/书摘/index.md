@@ -20,6 +20,6 @@
 
 [午夜之子](午夜之子.md)
 
-What I talk about when I talk about running
+[What I talk about when I talk about running](https://dynalist.io/d/rgnWcTw1GzYg3FJIvIEXWvKO)
 
 [The Three Musketeers](the-three-musketeers.md)
