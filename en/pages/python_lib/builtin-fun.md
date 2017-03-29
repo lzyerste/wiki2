@@ -218,6 +218,26 @@ Rather than being a function, [`tuple`](https://docs.python.org/3/library/stdtyp
 
 ## sum()
 
+```python
+sum(iterable[, start])
+```
+
+sum一般用于将iterable里的元素进行累加（对数字来说是求和，对链表则是连接），起始元素start可选，默认为0。
+
+字符串的连接建议使用`''.join(sequence)`，即先将字符串碎片都存到一个链表，而不要一直使用`+`操作。
+
+例子：
+
+```python
+sum([1, 2, 3])  # 6
+sum([[1], [2], [3]], [])  # [1, 2, 3]，没必要，使用itertools.chain()
+list(itertools.chain(*[[1], [2], [3]]))  # [1, 2, 3]
+```
+
+Sums *start* and the items of an *iterable* from left to right and returns the total. *start* defaults to `0`. The *iterable*‘s items are normally numbers, and the start value is not allowed to be a string.
+
+For some use cases, there are good alternatives to [`sum()`](https://docs.python.org/3/library/functions.html#sum). The preferred, fast way to concatenate a sequence of strings is by calling `''.join(sequence)`. To add floating point values with extended precision, see [`math.fsum()`](https://docs.python.org/3/library/math.html#math.fsum). To concatenate a series of iterables, consider using [`itertools.chain()`](https://docs.python.org/3/library/itertools.html#itertools.chain).
+
 ## max()
 
 ## min()
