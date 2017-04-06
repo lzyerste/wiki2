@@ -1,7 +1,5 @@
 # 会议目录
 
-[TO READ](to_read.md)
-
 ## HPCA
 
 | 1                                 | 2                                 | 3                                 | 4                                 | 5                                 |

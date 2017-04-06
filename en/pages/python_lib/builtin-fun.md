@@ -240,17 +240,109 @@ For some use cases, there are good alternatives to [`sum()`](https://docs.python
 
 ## max()
 
+```python
+max(iterable, *[, key, default])
+max(arg1, arg2, *args[, key])
+```
+
+返回最大值，有两种调用方式。第一种传入iterable数据结构，如list，只占用一个positional argument，如`max([1, 2, 3])`；第二种方式直接传入要处理数据，至少要提供两个数据，如`max(1, 2)`因为如果只传入一个那么会被视为第一种调用方式。因此，`max(1)`的调用方式是错误的，因为`TypeError: 'int' object is not iterable`。
+
+第一种调用方式有个default可选参数，这是因为传入的iterable可能是空的，那么返回default，如果default也没指定，那么就会报`ValueError`错误。
+
+两种调用方式都提供了key可选参数，这与`list.sort()`是类似的，即可以指定比较方式。如果数据里有多个相同的最大值，那么返回第一个最大值，类似稳定排序。
+
+例子：
+
+```python
+max([1, 2, -5])  # 2
+max(1, 2, -5)  # 2
+max([], default=0)  # 0
+max([1, 2, -5], key=lambda x: abs(x))  # -5
+```
+
+Return the largest item in an iterable or the largest of two or more arguments.
+
+If one positional argument is provided, it should be an [iterable](https://docs.python.org/3/glossary.html#term-iterable). The largest item in the iterable is returned. If two or more positional arguments are provided, the largest of the positional arguments is returned.
+
+There are two optional keyword-only arguments. The *key* argument specifies a one-argument ordering function like that used for [`list.sort()`](https://docs.python.org/3/library/stdtypes.html#list.sort). The *default* argument specifies an object to return if the provided iterable is empty. If the iterable is empty and *default* is not provided, a [`ValueError`](https://docs.python.org/3/library/exceptions.html#ValueError) is raised.
+
+If multiple items are maximal, the function returns the first one encountered. This is consistent with other sort-stability preserving tools such as `sorted(iterable,key=keyfunc, reverse=True)[0]` and `heapq.nlargest(1, iterable, key=keyfunc)`.
+
 ## min()
+
+```python
+min(iterable, *[, key, default])
+min(arg1, arg2, *args[, key])
+```
+
+最小值函数，参考`max()`。
+
+例子：
+
+```python
+min([1, 2, -5])  # -5
+min(1, 2, -5)  # -5
+min([], default=0)  # 0
+min([1, 2, -5], key=lambda x: abs(x))  # 1
+```
 
 ## pow()
 
+```python
+pow(x, y[, z])
+```
+
+指数函数，返回x的y次方。如果提供了第三个参数z，那么结果为x的y次方模z（比`pow(x, y) % z`要高效）。如果z参数是有效的，那么x跟y必须是整数，且y非负。
+
+当然，`pow(x, y)`跟`x ** y`是等价的。
+
+例子：
+
+```python
+pow(2, 4)  # 16
+pow(2, 4, 7)  # 2
+pow(2, 0.5)  # 1.414...
+```
+
+Return *x* to the power *y*; if *z* is present, return *x* to the power *y*, modulo *z* (computed more efficiently than `pow(x, y) % z`). The two-argument form `pow(x, y)` is equivalent to using the power operator: `x**y`.
+
+The arguments must have numeric types. With mixed operand types, the coercion rules for binary arithmetic operators apply. For [`int`](https://docs.python.org/3/library/functions.html#int) operands, the result has the same type as the operands (after coercion) unless the second argument is negative; in that case, all arguments are converted to float and a float result is delivered. For example, `10**2` returns `100`, but `10**-2` returns `0.01`. If the second argument is negative, the third argument must be omitted. If *z* is present, *x* and *y* must be of integer types, and *y* must be non-negative.
+
 ## round()
+
+```python
+round(number[, ndigits])
+```
+
+四舍五入，保留ndigits位小数精度，默认则返回整数。
+
+例子：
+
+```python
+round(1.5)  # 2
+round(2.5)  # 2，因为倾向于偶数结果
+round(-0.5)  # 0
+round(-1.5)  # -2
+round(3.1415926, 2)  # 3.14
+round(3.1415926, 4)  # 3.1416
+round(2.675, 2)  # 2.67，注意
+```
+
+Return *number* rounded to *ndigits* precision after the decimal point. If *ndigits* is omitted or is `None`, it returns the nearest integer to its input.
+
+For the built-in types supporting [`round()`](https://docs.python.org/3/library/functions.html#round), values are rounded to the closest multiple of 10 to the power minus *ndigits*; if two multiples are equally close, rounding is done toward the even choice (so, for example, both `round(0.5)` and `round(-0.5)` are `0`, and `round(1.5)` is `2`). Any integer value is valid for *ndigits* (positive, zero, or negative). The return value is an integer if called with one argument, otherwise of the same type as *number*.
+
+For a general Python object `number`, `round(number, ndigits)` delegates to `number.__round__(ndigits)`. 
+
+> **Note:** The behavior of [`round()`](https://docs.python.org/3/library/functions.html#round) for floats can be surprising: for example, `round(2.675, 2)` gives `2.67` instead of the expected `2.68`. This is not a bug: it’s a result of the fact that most decimal fractions can’t be represented exactly as a float. See [Floating Point Arithmetic: Issues and Limitations](https://docs.python.org/3/tutorial/floatingpoint.html#tut-fp-issues) for more information.
 
 ## abs(x)
 
 ```python
 abs(x)
 ```
+
+取绝对值，针对整型、浮点及复数都可用。如果是复数，则返回它的模。
 
 例子：
 
@@ -264,13 +356,13 @@ abs(3 + 4j)  # 5.0, complex number
 
 Return the **absolute value** of a number. The argument may be an integer or a floating point number. If the argument is a complex number, its magnitude is returned.
 
-取绝对值，针对整型、浮点及复数都可用。如果是复数，则返回它的模。
-
 ## divmod(a, b)
 
 ```python
 divmod(a, b)
 ```
+
+返回整数除法的商及余数，余数的符号与除数b相同。
 
 例子：
 
@@ -284,8 +376,6 @@ divmod(1234, 10)  # (123, 4)
 ```
 
 Take two (non complex) numbers as arguments and return a pair of numbers consisting of their **quotient** and **remainder** when using **integer division**. With mixed operand types, the rules for binary arithmetic operators apply. For integers, the result is the same as `(a // b, a % b)`. For floating point numbers the result is `(q, a % b)`, where *q* is usually `math.floor(a / b)` but may be 1 less than that. In any case `q * b + a % b` is very close to *a*, if `a % b` is non-zero it has the same sign as *b*, and `0 <= abs(a % b) < abs(b)`.
-
-返回整数除法的商及余数，余数的符号与除数b相同。
 
 ------
 
