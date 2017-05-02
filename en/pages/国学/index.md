@@ -1,5 +1,7 @@
 [典故](典故/index.md)
 
+[文选](selected/index.md)
+
 [大学·曾参](大学.md)
 
 [论语·孔子](论语.md)

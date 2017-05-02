@@ -381,7 +381,55 @@ Take two (non complex) numbers as arguments and return a pair of numbers consist
 
 ## str()
 
+```python
+class str(object='')
+class str(object=b'', encoding='utf-8', errors='strict')
+```
+
+常用的转字符串函数，返回字符串`str`类型。
+
+例子：
+
+```python
+str(1)  # '1'
+str([1, 2])  # '[1, 2]'
+```
+
+Return a [`str`](https://docs.python.org/3/library/stdtypes.html#str) version of *object*. See [`str()`](https://docs.python.org/3/library/stdtypes.html#str) for details.
+
+`str` is the built-in string [class](https://docs.python.org/3/glossary.html#term-class). For general information about strings, see [Text Sequence Type — str](https://docs.python.org/3/library/stdtypes.html#textseq).
+
 ## int()
+
+```python
+class int(x=0)
+class int(x, base=10)
+```
+
+转整型。传入为字符串时，可以指定转换进制。如果传入为浮点数，那么相当于把小数部分去除，只保留整数部分，也就是向0靠拢。
+
+例子：
+
+```python
+int('101')  # 101，默认10进制
+int('101', 2)  # 5，2进制
+int('101', 8)  # 65，8进制
+
+int('101', 0)  # 101
+# int('0101', 0)  # invalid literal，0x，0o，0b
+int('0x101', 0)  # 257，0x指定为16进制，base=0
+int('0o101', 0)  # 65，8进制
+int('0b101', 0)  # 5，2进制
+
+int(1.2)  # 1
+int(-1.2)  # -1
+```
+
+Return an integer object constructed from a number or string *x*, or return `0` if no arguments are given. If *x* is a number, return [`x.__int__()`](https://docs.python.org/3/reference/datamodel.html#object.__int__). For floating point numbers, this truncates towards zero.
+
+If *x* is not a number or if *base* is given, then *x* must be a string, [`bytes`](https://docs.python.org/3/library/functions.html#bytes), or [`bytearray`](https://docs.python.org/3/library/functions.html#bytearray) instance representing an [integer literal](https://docs.python.org/3/reference/lexical_analysis.html#integers) in radix *base*. Optionally, the literal can be preceded by `+` or `-` (with no space in between) and surrounded by whitespace. A base-n literal consists of the digits 0 to n-1, with `a` to `z` (or `A` to `Z`) having values 10 to 35. The default *base* is 10. The allowed values are 0 and 2–36. Base-2, -8, and -16 literals can be optionally prefixed with `0b`/`0B`, `0o`/`0O`, or `0x`/`0X`, as with integer literals in code. Base 0 means to interpret exactly as a code literal, so that the actual base is 2, 8, 10, or 16, and so that `int('010', 0)` is not legal, while `int('010')` is, as well as `int('010', 8)`.
+
+The integer type is described in [Numeric Types — int, float, complex](https://docs.python.org/3/library/stdtypes.html#typesnumeric).
 
 ## float()
 

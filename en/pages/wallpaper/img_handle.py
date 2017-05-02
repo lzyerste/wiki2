@@ -46,13 +46,15 @@ def gen_text(date=None):
 if __name__ == '__main__':
     # gen text
     text = gen_text()
+    tmrrw = dt.datetime.now() + dt.timedelta(1)
+    tomorrow = gen_text(tmrrw.strftime("%m-%d"))
 
     if not text:
         print("Error: no text!")
         sys.exit(1)
 
     im = Image.open('base.jpg')
-    p_w , p_h = im.size
+    p_w, p_h = im.size
     fontname = os.path.join("fonts", "simkai.ttf")
     # fontsize = 64
     fontsize = 58
@@ -68,6 +70,8 @@ if __name__ == '__main__':
     font = ImageFont.truetype(fontname, fontsize)
     d = ImageDraw.Draw(im)
     d.text((p_w * 0.2, p_h * 0.06), text, fill=text_color, font=font)
+    if tomorrow:
+        d.text((p_w * 0.6, p_h * 0.06), tomorrow, fill=text_color, font=font)
 
     im = im.resize((1920, 1080), Image.ANTIALIAS)
     # im.show()
