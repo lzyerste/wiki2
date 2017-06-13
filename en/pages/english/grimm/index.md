@@ -15,3 +15,6 @@
 [Ashputtel](ashputtel.md)，灰姑娘
 
 [The White Snake](the-white-snake.md)
+
+[The Fox and the Cat](the-fox-and-the-cat.md)
+

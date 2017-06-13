@@ -37,6 +37,17 @@ Rather than being a function, [`range`](https://docs.python.org/3/library/stdtyp
 
 [start, stop)，start默认为0。
 
+## input([prompt])
+
+If the *prompt* argument is present, it is written to standard output without a trailing newline. The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that. When EOF is read, [`EOFError`](https://docs.python.org/3/library/exceptions.html#EOFError) is raised. Example:
+
+```python
+>>> s = input('--> ')  
+--> Monty Python's Flying Circus
+>>> s  
+"Monty Python's Flying Circus"
+```
+
 ## print(s)
 
 ```python
@@ -216,7 +227,7 @@ Rather than being a function, [`tuple`](https://docs.python.org/3/library/stdtyp
 
 ------
 
-## sum()
+## sum(iterable[, start])
 
 ```python
 sum(iterable[, start])
@@ -379,7 +390,7 @@ Take two (non complex) numbers as arguments and return a pair of numbers consist
 
 ------
 
-## str()
+## str(object=b'', encoding='utf-8', errors='strict')
 
 ```python
 class str(object='')
@@ -441,9 +452,28 @@ The integer type is described in [Numeric Types — int, float, complex](https:/
 
 ## oct()
 
-## chr()
+## chr(i)
 
-## ord()
+Return the string representing a character whose Unicode code point is the integer *i*. For example, `chr(97)` returns the string `'a'`, while `chr(8364)` returns the string `'€'`. This is the inverse of [`ord()`](https://docs.python.org/3/library/functions.html#ord).
+
+The valid range for the argument is from 0 through 1,114,111 (0x10FFFF in base 16). [`ValueError`](https://docs.python.org/3/library/exceptions.html#ValueError) will be raised if *i* is outside that range.
+
+```python
+chr(65)  # 'A'
+chr(ord('A') + 1)  # B
+```
+
+## ord(c)
+
+Given a string representing one Unicode character, return an integer representing the Unicode code point of that character. For example, `ord('a')` returns the integer `97`and `ord('€')` (Euro sign) returns `8364`. This is the inverse of [`chr()`](https://docs.python.org/3/library/functions.html#chr).
+
+```python
+ord('\n')  # 10, 0x0A
+ord(' ')  # 30, 0x20
+ord('0')  # 48, 0x30
+ord('A')  # 65, 0x41
+ord('a')  # 97, 0x61
+```
 
 ------
 
@@ -453,4 +483,54 @@ The integer type is described in [Numeric Types — int, float, complex](https:/
 
 ## map()
 
-## zip()
+## zip(*iterables)
+
+Make an iterator that aggregates elements from each of the iterables.
+
+Returns an iterator of tuples, where the *i*-th tuple contains the *i*-th element from each of the argument sequences or iterables. **The iterator stops when the shortest input iterable is exhausted.** With a single iterable argument, it returns an iterator of 1-tuples. With no arguments, it returns an empty iterator.
+
+[`zip()`](https://docs.python.org/3/library/functions.html#zip) should only be used with unequal length inputs when you don’t care about trailing, unmatched values from the longer iterables. If those values are important, use [`itertools.zip_longest()`](https://docs.python.org/3/library/itertools.html#itertools.zip_longest) instead.
+
+[`zip()`](https://docs.python.org/3/library/functions.html#zip) in conjunction with the `*` operator can be used to unzip a list:
+
+```python
+>>> x = [1, 2, 3]
+>>> y = [4, 5, 6]
+>>> zipped = zip(x, y)
+>>> list(zipped)
+[(1, 4), (2, 5), (3, 6)]
+>>> x2, y2 = zip(*zip(x, y))
+>>> x == list(x2) and y == list(y2)
+True
+```
+
+## enumerate(iterable, start=0)
+
+Return an enumerate object. *iterable* must be a sequence, an [iterator](https://docs.python.org/3/glossary.html#term-iterator), or some other object which supports iteration. The [`__next__()`](https://docs.python.org/3/library/stdtypes.html#iterator.__next__) method of the iterator returned by [`enumerate()`](https://docs.python.org/3/library/functions.html#enumerate) returns a tuple containing a count (from *start* which defaults to 0) and the values obtained from iterating over *iterable*.
+
+```python
+s = "foobar"
+for i, c in enumerate(s):
+    print(i, c)
+```
+
+结果为：
+
+```python
+0 f
+1 o
+2 o
+3 b
+4 a
+5 r
+```
+
+按照C语言的习惯写法，则是：
+
+```python
+s = "foobar"
+for i in range(len(s)):
+    print(i, s[i])
+```
+
+不够简洁。

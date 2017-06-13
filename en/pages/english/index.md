@@ -1,3 +1,5 @@
+[CNN Student News](cnn_student_news/)
+
 [TED文本](ted/index.md)
 
 [英语美文](beautiful-essay/index.md)
