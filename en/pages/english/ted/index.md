@@ -8,3 +8,5 @@
 
 [001｜ What makes a good life](凨起天阑 - 001｜ What makes a good life？.md)
 
+[The new American dream](the-new-american-dream.md)
+

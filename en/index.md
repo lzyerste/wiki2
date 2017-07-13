@@ -1,5 +1,7 @@
 Start from here!
 
+[Local Full Text Search](http://localhost:8983/solr/#/gettingstarted/query)
+
 [COCA](pages/coca/index.md)
 
 [English](pages/english/index.md)
@@ -17,4 +19,6 @@ Start from here!
 [Python Lib](pages/python_lib/index.md)
 
 [Python 源码](pages/tech/cpython/index.md)
+
+[文选](pages/文选)
 
