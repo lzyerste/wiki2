@@ -1,4 +1,4 @@
-Start from here!
+[我的算法书](pages/我的算法书/index.md)
 
 [Local Full Text Search](http://localhost:8983/solr/#/gettingstarted/query)
 
